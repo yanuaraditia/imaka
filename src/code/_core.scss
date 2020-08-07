@@ -68,6 +68,11 @@ html, body {
     margin-top: 70px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    margin-top: 70px;
+  }
+}
 .has {
   &-background {
     &-transparent {
