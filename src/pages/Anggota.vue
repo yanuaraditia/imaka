@@ -15,10 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="columns is-flex-mobile is-gapless is-multiline" v-infinite-scroll="getUser"
-                infinite-scroll-disabled="busy"
-                infinite-scroll-distance="limit"
-                >
+                <div class="columns is-flex-mobile is-gapless is-multiline" v-else>
                     <div class="column is-6-mobile is-3-desktop" v-for="people in peoples" :key="people.id">
                         <div class="card people has-text-centered has-text-white py-3">
                             <div class="card-image">
@@ -62,20 +59,16 @@ export default {
             .get(url)
             .then(res => {
                 var peoples     = res.data.data
-                const append    = peoples.slice(this.peoples.length, this.peoples.length + this.limit)
-
-                this.peoples    = this.peoples.concat(append)
-
                 this.busy  = false
             })
             .catch(err => console.log(err))
         }
     },
-    // created() {
-    //     this.getUser()
-    // },
-    // mounted() {
-    //     this.getUser()
-    // }
+    created() {
+        this.getUser()
+    },
+    mounted() {
+        this.getUser()
+    }
 }
 </script>
