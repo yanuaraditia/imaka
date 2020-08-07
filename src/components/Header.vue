@@ -12,8 +12,8 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <g-link to="/about" class="navbar-item">About</g-link>
-                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <g-link to="/anggota" class="navbar-item">Anggota</g-link>
+                    <g-link to="/about" class="navbar-item">Tentang Kami</g-link>
                     <g-link to="/about" class="navbar-item">About</g-link>
                     <g-link to="/about" class="navbar-item">About</g-link>
                     <div class="navbar-item">

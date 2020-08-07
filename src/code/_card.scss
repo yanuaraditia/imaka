@@ -1,0 +1,34 @@
+@keyframes dummy {
+    0% {
+        background-position: 0% 0;
+    }
+    50% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: 110% 0;
+    }
+}
+.card {
+    &.people {
+        background: transparent;
+        img {
+            border-radius: 100%;
+        }
+        .dummy {
+            background: linear-gradient(to right, $grey 45%, #aaa 10%, $grey 45%);
+            animation: dummy 5s infinite;
+            &.is-image {
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+            &.is-text {
+                border-radius: 8px;
+                pointer-events: none;
+                color: transparent;
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@
         }
         font-weight: 500;
         color: $gray;
-        &:hover {
+        &:hover, &:focus {
             color: $white;
             background-color: transparent!important;
         }
