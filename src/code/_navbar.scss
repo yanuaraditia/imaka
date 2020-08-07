@@ -3,6 +3,10 @@
     border-bottom: 1px solid rgba($color: $grey, $alpha: .8);
     backdrop-filter: saturate(180%) blur(5px);
     height: 64px;
+    &.is-active {
+        background: $black;
+        border-color: $black;
+    }
     &-item {
         img {
             max-height: 70px;
@@ -19,5 +23,17 @@
     }
     &-link {
         color: $white;
+    }
+    &-burger {
+        background: transparent;
+        border: none;
+        outline: none!important;
+        height: 64px;
+    }
+    &-menu {
+        &.is-active {
+            background: $black;
+            border-bottom: 1px solid rgba($color: $grey, $alpha: .8);
+        }
     }
 }

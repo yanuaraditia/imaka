@@ -80,3 +80,18 @@ html, body {
     }
   }
 }
+::-webkit {
+  &-scrollbar {
+    width: 5px;
+    height: 5px;
+    &-track {
+      background: $black;
+    }
+    &-thumb {
+      background: $primary;
+      &:hover {
+        background: $primary-light;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" v-bind:class="{'is-active': isActive}" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
                 <g-link to="/" class="navbar-item"><img src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png" width="112"></g-link>

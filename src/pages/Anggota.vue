@@ -52,8 +52,8 @@ export default {
             dummies: [1,2,3,4,5,6,7,8,9,10,11,12]
         }
     },
-    methods: {
-        getUser() {
+    async mounted() {
+        try {
             this.busy = true
             axios
             .get(url)
@@ -62,13 +62,9 @@ export default {
                 this.busy  = false
             })
             .catch(err => console.log(err))
+        } catch(e) {
+            console.log(e)
         }
-    },
-    created() {
-        this.getUser()
-    },
-    mounted() {
-        this.getUser()
     }
 }
 </script>
