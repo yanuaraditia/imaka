@@ -1,0 +1,23 @@
+.navbar {
+    background: rgba($color: $black, $alpha: .8);
+    border-bottom: 1px solid rgba($color: $grey, $alpha: .8);
+    backdrop-filter: saturate(180%) blur(5px);
+    height: 64px;
+    &-item {
+        img {
+            max-height: 70px;
+        }
+        font-weight: 500;
+        color: $gray;
+        &:hover {
+            color: $white;
+            background-color: transparent!important;
+        }
+        &.active--exact {
+            color: $primary;
+        }
+    }
+    &-link {
+        color: $white;
+    }
+}

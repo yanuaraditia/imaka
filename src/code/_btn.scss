@@ -1,0 +1,16 @@
+.button {
+    background: $black;
+    border-color: $gray;
+    height: auto;
+    @media screen and (min-width: 992px) {
+        font-size: .85rem;
+    }
+    &.is {
+        &-medium {
+            @media screen and (min-width: 992px) {
+                font-size: 1rem;
+                min-width: 160px;
+            }
+        }
+    }
+}

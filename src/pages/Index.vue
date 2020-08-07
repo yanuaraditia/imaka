@@ -1,20 +1,19 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <section class="hero is-medium has-text-centered-desktop">
+      <div class="hero-body">
+        <div class="container">
+        <g-image alt="Example image" src="~/favicon.png" width="135" />
+        <h6 class="has-text-primary">OUR MISSION</h6>
+        <h1 class="title is-1">We enable developers to build and publish wonderful things</h1>
+        <h3 class="title is-5 has-text-weight-medium">We build products for developers and designers. And those who aspire to become one.</h3>
+        <p class="home-links">
+          <g-link to="/about" class="button is-primary is-medium has-text-weight-bold">About Us</g-link>
+          <g-link to="/about" class="button has-text-white is-medium">See the Story</g-link>
+        </p>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 

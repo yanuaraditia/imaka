@@ -1,36 +1,31 @@
 <template>
-    <b-navbar>
-        <template slot="brand">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img
-                    src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-                    alt="Lightweight UI components for Vue.js based on Bulma"
-                >
-            </b-navbar-item>
-        </template>
-        <template slot="end">
-            <b-navbar-item href="#">
-                Home
-            </b-navbar-item>
-            <b-navbar-item href="#">
-                Documentation
-            </b-navbar-item>
-            <b-navbar-dropdown label="Info">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            <b-navbar-item tag="div">
-                <div class="buttons">
-                    <g-link
-                    to="/join"
-                    class="button is-rounded is-outlined has-text-primary has-text-weight-bold"
-                    >Get a Quote</g-link>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <g-link to="/" class="navbar-item"><img src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png" width="112"></g-link>
+                <button role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <g-link
+                            to="/join"
+                            class="button is-primary is-rounded has-text-weight-bold"
+                            >Get a Quote</g-link>
+                        </div>
+                    </div>
                 </div>
-            </b-navbar-item>
-        </template>
-    </b-navbar>
+            </div>
+        </div>
+    </nav>
 </template>

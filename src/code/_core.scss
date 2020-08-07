@@ -20,11 +20,13 @@
     font-style: normal; }
 
 // Set your colors
-$primary: #8c67ef;
+$primary: #ffcc00;
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
-
+$black: #000;
+$grey: #333;
+$gray: #555;
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
     "white": ($white, $black),
@@ -49,10 +51,24 @@ $family-sans-serif: "Neurial Grotesk", sans-serif;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
-$background: #000;
+$background: $black;
 @import "~buefy/src/scss/buefy";
 
 html, body {
     background: $background;
     font-family: $family-sans-serif;
+    color: $white;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .container {
+    max-width: 950px;
+  }
+}
+.has {
+  &-background {
+    &-transparent {
+      background: transparent;
+    }
+  }
 }
