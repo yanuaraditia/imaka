@@ -13,15 +13,14 @@
             <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{'is-active': isActive}">
                 <div class="navbar-end">
                     <g-link to="/anggota" class="navbar-item">Anggota</g-link>
-                    <g-link to="/about" class="navbar-item">Tentang Kami</g-link>
-                    <g-link to="/about" class="navbar-item">About</g-link>
-                    <g-link to="/about" class="navbar-item">About</g-link>
+                    <g-link to="/kuisioner" class="navbar-item">Kuisioner</g-link>
+                    <g-link to="/join" class="navbar-item">Tentang</g-link>
                     <div class="navbar-item">
                         <div class="buttons">
                             <g-link
                             to="/join"
                             class="button is-primary is-rounded has-text-weight-bold"
-                            >Get a Quote</g-link>
+                            >Yuh melu!</g-link>
                         </div>
                     </div>
                 </div>

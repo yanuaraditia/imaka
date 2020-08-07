@@ -1,0 +1,35 @@
+.field {
+    position: relative;
+    .label {
+        color: $gray;
+    }
+    .input {
+        font-family: $family-sans-serif;
+        background: transparent;
+        border-width: 2px;
+        box-shadow: none;
+        color: $white;
+        &::-webkit-input-placeholder {
+            color: currentColor;
+        }
+        &.is-danger {
+            &::-webkit-input-placeholder {
+                color: $danger;
+            }
+        }
+    }
+    .select {
+        width: 100%;
+        &::after {
+            border-color: $white!important;
+        }
+        select {
+            box-shadow: none;
+            background: transparent;
+            border-width: 2px;
+            color: #fff;
+            width: 100%;
+            font-family: $family-sans-serif;
+        }
+    }
+}

@@ -3,15 +3,18 @@
     background: #111;
     ul {
         h5 {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
         li {
             @media screen and (min-width: 992px) {
-                padding: .1rem 0;
+                padding: .25rem 0;
             }
             a {
                 color: $gray;
                 font-weight: 500;
+                &:hover {
+                    color: $primary;
+                }
             }
         }
     }
