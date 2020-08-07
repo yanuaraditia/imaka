@@ -71,11 +71,11 @@ export default {
             .catch(err => console.log(err))
         }
     },
-    created() {
-        this.getUser()
-    },
-    mounted() {
-        this.getUser()
-    }
+    // created() {
+    //     this.getUser()
+    // },
+    // mounted() {
+    //     this.getUser()
+    // }
 }
 </script>

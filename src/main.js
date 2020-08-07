@@ -3,7 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import Buefy from 'buefy'
-import infiniteScroll from 'vue-infinite-scroll'
+// import infiniteScroll from 'vue-infinite-scroll'
 import '~/code/main.scss'
 
 export default function (Vue, { router, head, isClient }) {
@@ -12,6 +12,6 @@ export default function (Vue, { router, head, isClient }) {
 
   // Use buefy
   Vue.use(Buefy)
-  Vue.use(infiniteScroll)
+//  Vue.use(infiniteScroll)
   Vue.config.productionTip  = false
 }
