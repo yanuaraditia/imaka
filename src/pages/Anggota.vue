@@ -58,7 +58,7 @@ export default {
             axios
             .get(url)
             .then(res => {
-                var peoples     = res.data.data
+                this.peoples     = res.data.data
                 this.busy  = false
             })
             .catch(err => console.log(err))
