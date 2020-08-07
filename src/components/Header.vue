@@ -14,7 +14,7 @@
                 <div class="navbar-end">
                     <g-link to="/anggota" class="navbar-item">Anggota</g-link>
                     <g-link to="/kuisioner" class="navbar-item">Kuisioner</g-link>
-                    <g-link to="/join" class="navbar-item">Tentang</g-link>
+                    <g-link to="/about" class="navbar-item">Tentang</g-link>
                     <div class="navbar-item">
                         <div class="buttons">
                             <g-link
