@@ -3,7 +3,6 @@
     <section class="hero is-medium has-text-centered-desktop">
       <div class="hero-body">
         <div class="container">
-        <g-image alt="Example image" src="~/favicon.png" width="135" />
         <h6 class="has-text-primary">OUR MISSION</h6>
         <h1 class="title is-1">We enable developers to build and publish wonderful things</h1>
         <h3 class="title is-5 has-text-weight-medium">We build products for developers and designers. And those who aspire to become one.</h3>

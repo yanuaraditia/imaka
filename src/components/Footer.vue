@@ -53,7 +53,7 @@
             </div>
             <hr class="has-background-transparent"/>
             <div class="columns is-gapless">
-                <div class="column is-6-desktop has-text-grey-light">
+                <div class="column is-6-desktop is-12-mobile has-text-grey-light">
                     <span>Copyright &copy; {{ new Date().getFullYear() }} Some Inc. All right reserved.</span>
                 </div>
             </div>
